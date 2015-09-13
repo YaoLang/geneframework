@@ -1,0 +1,5 @@
+package org.geneframework.core.command;
+
+public class VariCommand {
+
+}

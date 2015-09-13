@@ -1,0 +1,25 @@
+package org.geneframework.orm.util;
+
+import org.geneframework.orm.matrix.Table;
+
+public class TimeAlignUtil implements TableReader{
+
+	@Override
+	public Table readTable(String filePath, boolean Ctaintopic) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void writeTable(Table target, String filePath) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String[] getSuffixs() {
+		String[] suffixs = {"txt"};
+		return suffixs;
+	}
+
+}

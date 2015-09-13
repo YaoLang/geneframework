@@ -1,0 +1,24 @@
+package org.geneframework.orm.util;
+
+import org.geneframework.orm.matrix.Table;
+/**
+ * Util to read table in csv file
+ * 
+ * @author kong
+ *
+ */
+public class CsvUtil implements TableReader{
+
+	@Override
+	public Table readTable(String filePath,boolean topic) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void writeTable(Table target, String filePath) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

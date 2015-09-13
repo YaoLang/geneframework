@@ -1,0 +1,14 @@
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/Setting.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/util/XMLHelper.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/AbstractDXMapping.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/DtMapping.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/SettingFactory.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/Configuration.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/util/PropertiesHelper.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/Type.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/TreeNode.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/GeneMethod.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/cfg/ParasMapping.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/FunctionMapping.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/DwMapping.java
+/Users/kong/Documents/codes/geneframework/gene-context/src/main/java/org/geneframework/context/mapping/TerminalMapping.java

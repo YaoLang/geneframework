@@ -1,0 +1,5 @@
+package org.geneframework.orm.matrix;
+
+public class TableFactory {
+
+}

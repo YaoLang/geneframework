@@ -1,0 +1,25 @@
+package org.geneframework.context.mapping;
+
+import javax.security.auth.login.Configuration;
+
+/**
+ * translate from chromosome to formula
+ * @author kong
+ *
+ */
+public class ExpressTranslate {
+	
+	private Configuration configuration;
+	
+	public ExpressTranslate(Configuration configuration, char[] chrom){
+		this.configuration = configuration;
+	}
+	
+	public double invoke(double[] o){
+		
+		
+		
+		
+		return 1d;
+	}
+}

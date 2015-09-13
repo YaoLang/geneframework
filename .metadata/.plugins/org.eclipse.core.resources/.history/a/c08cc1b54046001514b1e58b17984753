@@ -1,0 +1,15 @@
+package junit.test;
+
+import org.geneframework.orm.matrix.Table;
+import org.geneframework.orm.util.CsvUtil;
+import org.junit.Test;
+
+public class TestTable {
+	
+	@Test
+	public void testimport(){
+		CsvUtil csvUtil = new CsvUtil(",");
+		Table table = csvUtil.readTable("data/sunny.csv", true);
+		PrintTable.printTable(table);
+	}
+}

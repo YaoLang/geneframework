@@ -1,0 +1,50 @@
+package org.geneframework.orm.util;
+
+import java.util.Vector;
+
+public class TableReaderFactory {
+
+    private Vector<TableReader> tableReaders = new Vector<TableReader>();
+    private Vector<String> suffixs = new Vector<String>();
+
+    private static TableReaderFactory ourInstance = new TableReaderFactory();
+
+    public static TableReaderFactory getInstance() {
+        return ourInstance;
+    }
+
+    private TableReaderFactory() {
+    }
+
+    public void registerTableReader(TableReader tableReader){
+        tableReaders.add(tableReader);
+        for (int i = 0; i < tableReader.getSuffixs().length; i++) {
+            suffixs.add(tableReader.getSuffixs()[i]);
+        }
+    }
+
+    public void removeTableReader(TableReader tableReader){
+        tableReaders.remove(tableReader);
+    }
+
+    public TableReader createTableReader(String suffix){
+        TableReader t = null;
+        for (int i = 0; i < tableReaders.size(); i++) {
+            t = tableReaders.get(i);
+            String[] suffixs = t.getSuffixs();
+            for (int j = 0; j < suffixs.length; j++) {
+                if(suffix.equals(suffixs[j]))
+                    return t;
+            }
+        }
+        return null;
+    }
+
+    public String[] getAllSuffix(){
+        String[] r = new String[suffixs.size()];
+        suffixs.toArray(r);
+        return r;
+    }
+
+
+}

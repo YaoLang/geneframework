@@ -1,0 +1,27 @@
+package org.geneframework.orm.matrix;
+
+import org.geneframework.orm.util.TableReader;
+
+public class TableFactory {
+	
+	private TableReader tableReader = null;
+	
+	public Table createTable(String[] topic,String[][] records){
+		return new Table(topic, records);
+	}
+	
+	public Table createTable(String[][] records){
+		return new Table(records);
+	}
+	
+	/**
+	 * 
+	 * @param filePath
+	 * file types must be csv or excel
+	 * @return
+	 */
+	public Table createTable(String filePath){
+		
+		return null;
+	}
+}

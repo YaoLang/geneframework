@@ -1,0 +1,12 @@
+package org.geneframework.orm.matrix;
+
+import hu.kazocsaba.math.matrix.Matrix;
+
+public class GeneMatrix {
+	
+	private int label;
+	
+	public GeneMatrix(Matrix m,int label){
+		assert(m.getColumnCount()>=label):"label must be smaller than matrix col";
+	}
+}

@@ -1,0 +1,75 @@
+package org.geneframework.orm.matrix;
+
+import org.geneframework.orm.util.TableReader;
+import org.geneframework.orm.util.TableReaderFactory;
+
+public class TableFactory {
+
+	private TableReader tableReader = null;
+	private TableReaderFactory readerFactory = TableReaderFactory.getInstance();
+
+	private static TableFactory ourInstance = new TableFactory();
+
+	public static TableFactory getInstance() {
+		return ourInstance;
+	}
+
+	private TableFactory() {
+	}
+
+	/**
+	 * create table
+	 * 
+	 * @param topic
+	 *            topic names of table
+	 * @param records
+	 *            records of table
+	 * @return table model
+	 */
+	public Table createTable(String[] topic, String[][] records) {
+		return new Table(topic, records);
+	}
+
+	/**
+	 * create table without topic
+	 * 
+	 * @param records
+	 *            records of table
+	 * @return table model
+	 */
+	public Table createTable(String[][] records) {
+		return new Table(records);
+	}
+
+	/**
+	 * 
+	 * @param filePath
+	 *            you must register TableReader subclass in the readerFactory
+	 *            and it can auto get the method to read table according to file
+	 *            path suffix name
+	 * @return table model
+	 * @exception can
+	 *                not handle file type import
+	 */
+	public Table createTable(String filePath, boolean Ctaintopic)
+			throws Exception {
+		String[] seperate = filePath.split("\\.");
+		String suffix = seperate[seperate.length - 1];
+
+		TableReader tableReader = readerFactory.createTableReader(suffix);
+		if (tableReader == null)
+			throw new Exception("can not handle file type import");
+		return tableReader.readTable(filePath, Ctaintopic);
+	}
+
+	/**
+	 * read table from databases
+	 * 
+	 * @param tableName
+	 *            table name of data
+	 * @return table model
+	 */
+	public Table createTable(String tableName) {
+		return null;
+	}
+}

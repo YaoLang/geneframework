@@ -1,0 +1,14 @@
+org/geneframework/context/util/PropertiesHelper.class
+org/geneframework/context/cfg/GeneMethod.class
+org/geneframework/context/mapping/FunctionMapping.class
+org/geneframework/context/util/XMLHelper.class
+org/geneframework/context/mapping/DwMapping.class
+org/geneframework/context/cfg/ParasMapping.class
+org/geneframework/context/mapping/AbstractDXMapping.class
+org/geneframework/context/mapping/DtMapping.class
+org/geneframework/context/mapping/TreeNode.class
+org/geneframework/context/cfg/Setting.class
+org/geneframework/context/cfg/SettingFactory.class
+org/geneframework/context/mapping/TerminalMapping.class
+org/geneframework/context/cfg/Configuration.class
+org/geneframework/context/cfg/Type.class

@@ -1,0 +1,10 @@
+package org.geneframework.context.mapping;
+
+/**
+ * translate from chromosome to formula
+ * @author kong
+ *
+ */
+public class ExpressTranslate {
+
+}

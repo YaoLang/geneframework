@@ -1,0 +1,35 @@
+package org.geneframework.orm.matrix;
+
+import java.io.File;
+
+import org.geneframework.orm.util.TableReader;
+import org.geneframework.orm.util.TableReaderFactory;
+
+public class TableFactory {
+	
+	private TableReader tableReader = null;
+	private TableReaderFactory readerFactory = TableReaderFactory.getInstance();
+	
+	public Table createTable(String[] topic,String[][] records){
+		return new Table(topic, records);
+	}
+	
+	public Table createTable(String[][] records){
+		return new Table(records);
+	}
+	
+	/**
+	 * 
+	 * @param filePath
+	 * you must register TableReader subclass
+	 * in the readerFactory and it can auto get
+	 * the method to read table according to file
+	 * path suffix name
+	 * @return
+	 */
+	public Table createTable(String filePath){
+		File file = new File(filePath);
+		
+		return null;
+	}
+}

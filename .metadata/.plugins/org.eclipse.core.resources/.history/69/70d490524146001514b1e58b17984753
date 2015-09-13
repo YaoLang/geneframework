@@ -1,0 +1,96 @@
+package org.geneframework.orm.matrix;
+
+public class Table {
+	
+	private String[] topic;								//字段名称
+	private String[][] records;							//表记录
+	private int row;									//表行数(不包括字段)
+	private int col;									//表列数(不包括字段)
+	
+	public Table(Table table){
+		topic = table.topic;
+		records = table.records;
+		row = table.getRow();
+		col = table.getCol();
+	}
+	
+	public Table(String[][] records){
+		this.topic = new String[records[0].length];
+		this.records = records;
+		char s = '1';
+		String t = "T";
+		for(int i = 0 ; i < topic.length ; i ++){
+			topic[i] = t.concat(String.valueOf(s++));
+		}
+		this.col = topic.length;
+		this.row = records.length;
+	}
+	
+	public Table(String[] topic,String[][] records){
+		this.topic = topic;
+		this.records = records;
+		this.col = topic.length;
+		this.row = records.length;
+	}
+	
+	public Table getSubTable(int row1,int row2,int col1,int col2){
+		assert(row2>=0&&row1>0&&row2>row1):"row2 must bigger than row1";
+		assert(col2>=0&&col1>0&&col2>col1):"col2 must bigger than col1";
+		assert(row2<=this.row):"row2 must smaller than row";
+		assert(col2<=this.col):"col2 must smaller than col";
+		int row = row1 - row2 + 1;
+		int col = col1 - col2 + 1;
+		String[][] subtable = new String[row][col];
+		int x=0,y;
+		for (int i = row1; i < row2 ; i ++,x++){
+			y=0;
+			for (int j = col1 ; j < col2 ; j ++,y++){
+				subtable[x][y] = records[i][j];
+			
+			}
+		}
+		return new Table(topic, subtable);
+	}
+	
+	public String get(int row,int col){
+		return records[row][col];
+	}
+	
+	public String set(int row,int col){
+		return records[row][col];
+	}
+
+	public String[] getTopic() {
+		return topic;
+	}
+
+	public void setTopic(String[] topic) {
+		this.topic = topic;
+	}
+
+	public String[][] getRecords() {
+		return records;
+	}
+
+	public void setRecords(String[][] records) {
+		this.records = records;
+	}
+
+	public int getRow() {
+		return row;
+	}
+
+	public void setRow(int row) {
+		this.row = row;
+	}
+
+	public int getCol() {
+		return col;
+	}
+
+	public void setCol(int col) {
+		this.col = col;
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+package junit.test;
+
+import org.geneframework.orm.util.CsvUtil;
+import org.geneframework.orm.util.ExcelUtil;
+import org.geneframework.orm.util.TableReader;
+import org.geneframework.orm.util.TableReaderFactory;
+import org.junit.Test;
+
+/**
+ * Created by kong on 15/8/20.
+ */
+public class TestReader {
+
+    @Test
+    public void testRegi(){
+        TableReaderFactory tableReaderFactory = TableReaderFactory.getInstance();
+        tableReaderFactory.registerTableReader(new CsvUtil());
+        tableReaderFactory.registerTableReader(new ExcelUtil());
+        TableReader tableReader = tableReaderFactory.createTableReader("xasf");
+        System.out.println(tableReader);
+    }
+}

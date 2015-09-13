@@ -1,0 +1,15 @@
+package junit.test;
+
+import java.lang.reflect.AnnotatedType;
+
+import org.geneframework.orm.util.TableReader;
+import org.junit.Test;
+
+public class TestReflect {
+	
+	@Test
+	public void getImplClasses(){
+		AnnotatedType o = TableReader.class.getAnnotatedSuperclass();
+		System.out.println(o);
+	}
+}

@@ -1,0 +1,17 @@
+package org.geneframework.orm.util;
+
+import org.geneframework.orm.matrix.Table;
+
+public class ExcelUtil implements TableReader{
+
+	@Override
+	public Table readTable(boolean topic) {
+		return null;
+	}
+
+	@Override
+	public void writeTable(Table target, String filePath) {
+		
+	}
+
+}

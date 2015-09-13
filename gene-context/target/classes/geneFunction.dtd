@@ -1,0 +1,10 @@
+<!ELEMENT GeneFunction (define|method)*>
+<!ELEMENT define (#PCDATA)>
+<!ATTLIST define
+          class CDATA #REQUIRED
+          method CDATA #REQUIRED
+          mark CDATA #REQUIRED>
+<!ELEMENT method (#PCDATA)>
+<!ATTLIST method
+          mark CDATA #IMPLIED
+          type CDATA #REQUIRED>

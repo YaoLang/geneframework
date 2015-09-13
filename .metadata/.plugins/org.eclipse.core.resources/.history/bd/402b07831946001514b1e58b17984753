@@ -1,0 +1,19 @@
+package org.geneframework.orm.matrix;
+
+public class TableFactory {
+	
+	
+	public Table createTable(String[] topic,String[][] datas){
+		return null;
+	}
+	
+	/**
+	 * 
+	 * @param filePath
+	 * file must be end with csv
+	 * @return
+	 */
+	public Table createTable(String filePath){
+		
+	}
+}

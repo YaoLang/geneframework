@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gene-context/gene-context.iml" filepath="$PROJECT_DIR$/gene-context/gene-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gene-core/gene-core.iml" filepath="$PROJECT_DIR$/gene-core/gene-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gene-instrument/gene-instrument.iml" filepath="$PROJECT_DIR$/gene-instrument/gene-instrument.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gene-orm/gene-orm.iml" filepath="$PROJECT_DIR$/gene-orm/gene-orm.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+package org.geneframework.orm.util;
+
+import org.geneframework.orm.matrix.Table;
+
+public interface TableReader {
+	
+	/**
+	 * 读取表格
+	 * @param topic
+	 * @return
+	 */
+	Table readTable(boolean topic);
+	
+	/**
+	 * 写表格
+	 * @param target
+	 * @param filePath
+	 */
+	void writeTable(Table target,String filePath);
+}

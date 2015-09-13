@@ -1,0 +1,17 @@
+package junit.test;
+
+import org.geneframework.orm.util.TableReader;
+import org.junit.Test;
+
+public class TestReflect {
+	
+	@Test
+	public void getImplClasses(){
+		Class c = TableReader.class.getComponentType();
+//		Object[] o = TableReader.class.getAnnotatedSuperclass();
+//		for (int i = 0; i < o.length; i++) {
+//			System.out.println(o[i]);
+//		}
+		System.out.println(c);
+	}
+}

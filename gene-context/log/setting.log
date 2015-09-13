@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 16 15:24:36 CST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">number_of_runs: 100</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">maxgen: 200</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">popsize: 100</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">codeschema: org.geneframework.core.operate.codeschema</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">selection: org.geneframework.core.operate.selection</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">select_rate: 0.7</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">finess: org.geneframework.core.operate.finess</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">hlength: 7</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">slength: 3</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">Dw: true</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">Dt: true</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">org.geneframework.core.operate.variation: 0.1</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">org.geneframework.core.operate.RISTransposition: 0.2</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.geneframework.context.util.PropertiesHelper category">org.geneframework.context.util.PropertiesHelper</td>
+<td title="Message">org.geneframework.core.operate.ISTransposition: 0.2</td>
+</tr>

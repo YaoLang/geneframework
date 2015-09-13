@@ -1,0 +1,6 @@
+package org.geneframework.core.command;
+
+public interface VariCommand {
+	void excute();
+	void rollback();
+}

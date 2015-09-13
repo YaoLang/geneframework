@@ -1,0 +1,37 @@
+package org.geneframework.orm.util;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+mport java.io.FileReader;
+
+import java.io.FileReader;
+
+import org.geneframework.orm.matrix.Table;
+
+public class TimeAlignUtil implements TableReader{
+
+	@Override
+	public Table readTable(String filePath, boolean Ctaintopic) {
+		BufferedReader br = null;
+		br = new BufferedReader(new FileReader(new File(filePath)));
+		String line = null;
+		while((line=br.readLine())!=null){
+			String[] split = 
+		}
+		return null;
+	}
+
+	@Override
+	public void writeTable(Table target, String filePath) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String[] getSuffixs() {
+		String[] suffixs = {"txt"};
+		return suffixs;
+	}
+
+}

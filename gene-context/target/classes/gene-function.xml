@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GeneFunction SYSTEM "src/main/resources/geneFunction.dtd">
+<GeneFunction>
+		<define class="java.lang.Math" method="sqrt" mark="Q"/>
+        <define class="java.lang.Math" method="tan" mark="~"/>
+        <method type="abs"/>
+        <method type="sin"/>
+        <method type="cos"/>
+        <method type="log"/>
+        <method type="exp"/>
+</GeneFunction>

@@ -1,0 +1,28 @@
+package org.geneframework.orm.util;
+
+import org.geneframework.orm.matrix.Table;
+
+/**
+ * Table read Utils interface
+ * @author kong
+ *
+ */
+public interface TableReader {
+	
+	/**
+	 * 
+	 * @param topic
+	 * @return
+	 */
+	Table readTable(boolean topic);
+	
+	/**
+	 * 写表格
+	 * @param target
+	 * table model
+	 * @param filePath
+	 * output file path
+	 */
+	void writeTable(Table target,String filePath);
+	
+}

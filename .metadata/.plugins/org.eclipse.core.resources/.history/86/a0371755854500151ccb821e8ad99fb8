@@ -1,0 +1,50 @@
+package org.geneframework.orm.matrix;
+
+public class Table {
+	
+	private String[] topic;
+	private String[][] records;
+	private int row;
+	private int col;
+	
+	public Table(String[] topic,String[][] records){
+		this.topic = topic;
+		this.records = records;
+		this.col = topic.length;
+		this.row = records.length;
+	}
+	
+	public Table getSubTable(int row1,int row2,int col1,int col2){
+		int row = this.row - row1 + row2 + 1;
+		int col = this.col - col1 + col2 + 1;
+		
+		for (int i = 0 ; i < row ; i ++){
+			for (int j = 0 ; j < col ; j ++){
+				
+			}
+		}
+		return null;
+		
+	}
+	
+
+	
+	public Table deleteCol(int low,int high,boolean choose){
+		int len = col-high+low-1;
+		String[] dt = new String[len];
+		String[][] dtdata = new String[row][len];
+		int j = 0 ;
+		for (int i = 0; i < topic.length; i++) {
+			if(i>low&&i<high)
+				dt[j++] = topic[i];
+		}
+		for	(int i = 0 ; i < row ; i ++ ){
+			for(int k = 0 ; k < len ; k ++){
+				
+			}
+		}
+		
+		
+		return null;
+	}
+}

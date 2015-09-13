@@ -1,0 +1,10 @@
+<!ELEMENT GeneFunction (Methods)*>
+<!ELEMENT Methods (function-define|fuction-mapping|method)*>
+<!ELEMENT function-define (define-name|define-class|method-name)*>
+<!ELEMENT define-name (#PCDATA)>
+<!ELEMENT define-class (#PCDATA)>
+<!ELEMENT method-name (#PCDATA)>
+<!ELEMENT fuction-mapping (define-name|define-mark)*>
+<!ELEMENT define-mark (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ATTLIST method type CDATA #REQUIRED>

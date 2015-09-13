@@ -1,0 +1,13 @@
+package org.geneframework.core.command;
+
+import org.geneframework.core.model.Gene;
+
+public abstract class VariCommand {
+	abstract char[] vari(char[] chrom);
+	
+	public Gene vari(Gene gene){
+		char[] v = vari(gene.getChrom());
+		gene.setChrom(v);
+		return gene;
+	}
+}
